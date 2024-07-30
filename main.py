@@ -139,5 +139,15 @@ async def get_director(nombre_director: str):
 
 @app.get('/recomendacion/{titulo}')
 async def recomendacion(titulo: str):
-    return ["Pelicula 1","Pelicula 2","Pelicula 3","Pelicula 4","Pelicula 5"]
+    try:
+        df_recom = pd.read_csv("data/recomendacion_db.csv",sep=";")
+        movies = pd.read_csv("data/movies_api.csv", usecols=['id','title'])
+        movie_id = movies[movies["title"].str.upper() == titulo.upper()]['id']
+        
+        # Filtrar el DataFrame por el game_id especificado
+        df_recom = df_recom[df_recom["movie_id"] == int(movie_id)]["recom"]
+        return {"recomendaciones":df_recom}
+        
+    except Exception as e:
+        return {"error": str(e)}     
     
