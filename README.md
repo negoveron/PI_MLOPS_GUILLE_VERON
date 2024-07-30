@@ -24,7 +24,7 @@ Se utilizaron librerias como:
 ### Proceso EDA
 
 En el documento `EDA.ipynb` se encuentran los pasos realizados. Para esta etapa la propuesta fue: a partir de las preguntas del negocio, de los requerimientos solicitados, explorar los datos a fin de organizar, depurar, filtrar. Siempre atentos a que se debe deployar las funciones en una webservice.
-El detalle de las funciones a dearrollar se pueden encontrar [aquí](https://github.com/soyHenry/PI_ML_OPS/blob/PT/Readme.md#propuesta-de-trabajo-requerimientos-de-aprobaci%C3%B3n "aquí")
+El detalle de las funciones a dearrollar se pueden encontrar [aquí](https://github.com/soyHenry/fe-ct-pimlops2?tab=readme-ov-file#propuesta-de-trabajo-requerimientos-de-aprobaci%C3%B3n "aquí")
 
 Se utilizaron librerias como:
 - pandas
